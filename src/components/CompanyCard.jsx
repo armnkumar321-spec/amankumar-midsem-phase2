@@ -29,7 +29,7 @@ function CompanyCard({ company, checkEligible, toggleApply }) {
           View Details
         </Link>
 
-        {/* Button only for eligible companies */}
+        
         {eligible ? (
           <button
             className={company.isApplied ? "btn btn-red" : "btn btn-blue"}
