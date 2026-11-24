@@ -8,10 +8,9 @@ import CompanyDetails from "./pages/CompanyDetails";
 import Applications from "./pages/Applications";
 
 function App() {
-  // Main state: the list of companies (isApplied changes when we apply/withdraw)
+  
   const [companies, setCompanies] = useState(companyData);
 
-  // Eligible only if CGPA is enough AND my branch is in the list
   function checkEligible(company) {
     return (
       myProfile.cgpa >= company.minCGPA &&
@@ -19,7 +18,7 @@ function App() {
     );
   }
 
-  // Flip isApplied (Apply <-> Withdraw) for the company with this id
+ 
   function toggleApply(id) {
     const updated = companies.map((company) => {
       if (company.id === id) {
