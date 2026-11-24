@@ -2,7 +2,7 @@ import { useState } from "react";
 import CompanyCard from "../components/CompanyCard";
 
 function Companies({ companies, checkEligible, toggleApply }) {
-  // Controlled input: the dropdown value is stored in state
+
   const [filter, setFilter] = useState("All");
 
   const filteredCompanies = companies.filter((company) => {
