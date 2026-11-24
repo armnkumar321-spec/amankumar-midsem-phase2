@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router";
 
 function CompanyDetails({ companies, checkEligible, toggleApply }) {
-  const { id } = useParams(); // id from the URL is a string
+  const { id } = useParams(); 
 
   const company = companies.find((c) => c.id === Number(id));
 
